@@ -18,7 +18,7 @@ export function eliminarProducto(id) {
     console.log(id)
     return async dispatch => {
         
-    await axios.delete(`https://mongodbback.herokuapp.com/delete/${id}`)
+    await axios.delete(`https://mongodbback.herokuapp.com/productos/delete/${id}`)
       return dispatch({
         type: 'DELETE'
       })
