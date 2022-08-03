@@ -48,7 +48,7 @@ export default function Cards({
           <button onClick={abrieCerrar} className={s.boton}>
             Editar
           </button>
-        <button onClick={ () => deleteId(id)}>Eliminar</button>
+        <button className={s.boton} onClick={ () => deleteId(id)}>Eliminar</button>
         </div>
       </div>
       <Modal className={s.modal} open={cierre} onClose={abrieCerrar}>
