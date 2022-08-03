@@ -46,7 +46,7 @@ const Crear = ({ setCierre }) => {
   return (
     <>
       <div className={s.container}>
-        <form className={s.form} onSubmit={hadleSubmit}>
+        <form className={s.form} onSubmit={(e) => hadleSubmit(e)}>
           <h1>Crea un Producto</h1>
           <div className={s.div}>
             <TextField
