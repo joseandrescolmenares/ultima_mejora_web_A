@@ -29,7 +29,7 @@ const Crear = ({ setCierre }) => {
     e.preventDefault();
     dispatch(PostProductos(input));
     setTimeout(() => {
-      socket.emit("mensajes", "nuevoProducto");
+      socket.emit("mensaje", "nuevoProducto");
       dispatch(getProductos());
     }, 1000);
 

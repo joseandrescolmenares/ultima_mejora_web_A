@@ -30,7 +30,7 @@ export default function Cards({
    
     setTimeout(() => {
       dispatch(getProductos());
-      socket.emit("mensajes", "CAMBIO");
+      socket.emit("mensaje", "CAMBIO");
     }, 1000);
   };
 
