@@ -22,7 +22,6 @@ function App() {
     <div>
       <nav className={s.nav}>
         <button className={s.crear} onClick={() => setCierre(true)}>Crear</button>
-         
       </nav>
       <>
         { produ && produ.map((el) => ( 
